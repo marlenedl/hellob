@@ -60,7 +60,7 @@
     <h3 id="client-name-main">M. BENITO LIONEL</h3>
     <table>
       <tr><th>Intitulé du compte</th><th>Numéro de compte</th><th>Solde</th></tr>
-      <tr><td>SOLDE</td><td id="compte-numero">Chargement...</td><td id="compte-solde">Chargement...</td></tr>	  <tr><td><b>DESIGNATION</b></td><td><b>MONTANT</b></td><td><b>STATUT</b></td></tr>	  <tr><td>FRAIS DE DEBLOCAGE</td><td>45 000 EUR</td><td><font color=red>IMPAYE</font></td></tr>
+      <tr><td>SOLDE</td><td id="compte-numero">Chargement...</td><td id="compte-solde">Chargement...</td></tr>	  <tr><td><b>DESIGNATION</b></td><td><b>MONTANT</b></td><td><b>STATUT</b></td></tr>	  <tr><td>FRAIS DE DEBLOCAGE</td><td>45 000 EUR</td><td><font color=red><b>IMPAYE</b></font></td></tr>
     </table>
 
     <h3 style="margin-top: 25px;">Autres Comptes Simules</h3>
@@ -94,7 +94,7 @@ document.addEventListener('DOMContentLoaded', async () => {
   if (user) {
     document.getElementById('sidebar-name').textContent = `${user.nom}`;
     document.getElementById('sidebar-address').textContent = `Adresse : ${user.adresse}`;
-    document.getElementById('client-name-main').textContent = `M./Mme ${user.nom.toUpperCase()}`;
+    document.getElementById('client-name-main').textContent = `M. ${user.nom.toUpperCase()}`;
 
     document.getElementById('right-panel-conseiller').innerHTML = `Votre conseiller clientèle : <strong>${user.conseiller}</strong><br>E-mail: ${user.emailConseiller}`;
 
